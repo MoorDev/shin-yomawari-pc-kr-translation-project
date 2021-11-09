@@ -1,0 +1,6 @@
+요마와리2 (신 요마와리)용 번역 적용법
+
+ko-text폴더 안에 번역.txt 파일을 사용 (내 구글드라이브 뒤지면 요마와리 변역 스프레드시트가 있다. 여기서 번역부분만 가져올것)
+convert.txt로 StringListDataBase_en.dat.txt로 변환 UTF-16
+
+text_import.py (이건 파이썬 2.7용) 돌려주면 import에 StringListDataBase_en.dat 파일이 생기는데 이게 한글로 번역된 스트링데이터

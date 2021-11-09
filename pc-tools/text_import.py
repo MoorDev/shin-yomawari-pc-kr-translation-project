@@ -11,7 +11,7 @@ def getText():
     jis_str = u"ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶー"
     fl = os.listdir("cn-text")
     for fn in fl:
-        fp = codecs.open("cn-text//%s" % fn, "rb", "utf-16")
+        fp = codecs.open("ko-text//%s" % fn, "rb", "utf-16")
         data = fp.read().replace("\r", "").replace("\n", "")
         for char in data:
             if char in base_str:
@@ -33,7 +33,7 @@ def import_stringlistdatabase(string_list, o_data):
     br.write(o_data)
     br.seek(0)
     nums = struct.unpack("I", br.read(4))[0]
-    br.seek(0xc * nums, 1)
+    br.seek(0x10 * nums, 1)
     br.truncate()
     for i in xrange(nums):
         br.seek(0, 2)
@@ -41,9 +41,9 @@ def import_stringlistdatabase(string_list, o_data):
         string = string_list[i].replace("\r", "")
         br.write(string.encode("utf-8"))
         br.write("\x00\x00")
-        br.seek(0x4 + 0xc * i + 0x4)
+        br.seek(0x4 + 0x10 * i + 0x4)
         br.write(struct.pack("I", len(string)))
-        br.write(struct.pack("I", ofs - 4))
+        br.write(struct.pack("I", ofs-4))
     return br.getvalue()
 
 
@@ -82,7 +82,7 @@ def makestr(lines):
                     break
                 string += lines[index + i]
                 i += 1
-            string_list.append(string[:-4])
+            string_list.append(string[:-2])
     return string_list
 
 
@@ -90,7 +90,7 @@ def build_text(name):
     print(name)
     fp = open("data//%s" % name, "rb")
     data = fp.read()
-    text = codecs.open("cn-text//%s.txt" % name, "rb", "utf-16").readlines()
+    text = codecs.open("ko-text//%s.txt" % name, "rb", "utf-16").readlines()
     text = makestr(text)
     if ("collectionitemdatabase" in name):
         dst = import_keyitemdatabase(text, data)
@@ -108,8 +108,8 @@ def build_text(name):
 
 
 def main():
-    getText()
-    build_text("StringListDataBase_jp.dat")
+    #getText()
+    build_text("StringListDataBase_en.dat")
 
 if __name__ == "__main__":
     main()
