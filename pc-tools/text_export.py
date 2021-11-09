@@ -67,7 +67,7 @@ def export_text(name):
         lst = export_keyitemdatabase(data)
     else:
         lst = export_stringlistdatabase(data)
-    dst = codecs.open("jp-text//%s.txt" % name, "wb", "utf-16")
+    dst = codecs.open("en-text//%s.txt" % name, "wb", "utf-16")
     for i in xrange(len(lst)):
         string = lst[i]
         dst.write(u"#### %d ####\n%s\n\n" % (i + 1, string))
