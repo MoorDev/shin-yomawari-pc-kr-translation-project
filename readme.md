@@ -9,4 +9,10 @@ wmltogether/yomawari-pc-translation 여기의 요마와리: 떠도는자의 중�
 
 다만, 파이썬 2.7용이라 살짝 걸림.
 
-Thnks. to wmltogether
+번역은
+https://docs.google.com/spreadsheets/d/1ErRSphZ3s6r8rBS0PD-9L2cw9ckqpO6c1l7TvpTCHHE/edit?usp=sharing
+여기서 계속 수정중
+
+필요하면 댓글이라도 달아주세요.
+
+Thanks. to wmltogether
