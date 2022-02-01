@@ -15,7 +15,7 @@ https://docs.google.com/spreadsheets/d/1ErRSphZ3s6r8rBS0PD-9L2cw9ckqpO6c1l7TvpTC
 
 필요하면 댓글이라도 달아주세요.
 
-2022.02.01 어느정도 영문기반 번역 완료
+>> 2022.02.01 어느정도 영문기반 번역 완료
 
 https://twitter.com/_Ar1n4u 이분이 일본어 기반으로 재번역및 패치를 제작하고 있습니다. 완벽한 패치를 원한다면 이쪽에서 나오는 것을 기대해 주세요.
 
