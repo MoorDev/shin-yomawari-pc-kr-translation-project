@@ -20,4 +20,5 @@ https://docs.google.com/spreadsheets/d/1ErRSphZ3s6r8rBS0PD-9L2cw9ckqpO6c1l7TvpTC
 https://twitter.com/_Ar1n4u 이분이 일본어 기반으로 재번역및 패치를 제작하고 있습니다. 완벽한 패치를 원한다면 이쪽에서 나오는 것을 기대해 주세요.
 
 Thanks. to wmltogether
+
 Thanks. https://twitter.com/_Ar1n4u
